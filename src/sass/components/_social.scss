@@ -1,0 +1,33 @@
+.container {
+    display: flex;    
+    max-width: 1920px;
+}
+.social__container-discription {
+    padding: 120px 72px;
+    
+}
+
+.social__title {
+    font-family: 'Sen';
+    font-style: normal;
+    font-size: 55px;
+    line-height: 66px;
+    display: flex;
+    align-items: center;
+    color: #181823;
+    margin-bottom: 24px;
+}
+
+.social__description {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #5B6876;
+    margin-bottom: 134px;
+}
+    
+

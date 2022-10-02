@@ -1,0 +1,73 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  background-color: getColor("base");
+  color: getColor("text");
+  font-family: Sen, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 72px;
+  padding-right: 72px;
+  max-width: 1920px;
+}
+
+.social__title {
+  font-family: "Sen";
+  font-style: normal;
+  font-size: 55px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+  color: #181823;
+  margin-bottom: 24px;
+}
+
+.social__description {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #5B6876;
+  margin-bottom: 134px;
+}/*# sourceMappingURL=index.css.map */
