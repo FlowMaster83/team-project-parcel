@@ -1,5 +1,9 @@
 @import './common';
 
+@import './utils/base';
+@import './utils/vars';
+@import './utils/placeholders';
+
 @import './components/company';
 @import './components/dribbble';
 @import './components/experience';
