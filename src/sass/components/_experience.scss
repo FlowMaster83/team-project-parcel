@@ -57,18 +57,36 @@
 }
 
 .experience__card:not(:last-child) {
-    margin-bottom: 40px;
-       
-    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .experience__card:not(:last-child) {
         margin-bottom: 0;
     }
 
+    .experience__card{
+        width: 213px;
+    }
+
+    .experience__list{
+        display: flex;
+        gap: 24px;
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .experience__header {
+        width: 197px;
+    }
 }
 
-.experience__list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        gap: 25px;
-        flex-basis: calc((100% - 50px) / 3);
-}
+
+@media screen and (min-width: 1440px) {
+    .experience__card {
+        width: 416px;
+    }
+
+    .experience__header {
+        width: 100%;
+    }
 }
