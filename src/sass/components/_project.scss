@@ -5,6 +5,14 @@
     font-size: 32px;
     line-height: 1.19;
     margin-bottom: 80px;
+    color:#fff;
+}
+.project__text{
+    font-weight: 700;
+font-size: 16px;
+
+text-transform: uppercase;
+
 }
 .projects__box:not(:last-of-type){
     margin-bottom: 48px;
@@ -27,13 +35,13 @@
 
 }
 .projects__card-title{
+    color: #fff;
     font-weight: 700;
 font-size: 24px;
 margin-bottom: 13px;
 }
 .projects__card-text{
     font-weight: 400;
-    color:getColor('light-grey');
 }
 .projects__link{
 display: none;
