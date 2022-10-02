@@ -43,33 +43,18 @@ a {
   text-decoration: none;
 }
 
-.projects {
-  padding: 48px 20px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 360px) {
-  .projects {
-    width: 360px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .projects {
-    width: 768px;
-    padding: 80px 40px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .projects {
-    width: 1440px;
-    padding: 120px 72px;
-  }
-}
-
 .projects__title {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.19;
   margin-bottom: 80px;
+  color: #fff;
+}
+
+.project__text {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .projects__box:not(:last-of-type) {
@@ -96,6 +81,7 @@ a {
 }
 
 .projects__card-title {
+  color: #fff;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 13px;
@@ -103,7 +89,6 @@ a {
 
 .projects__card-text {
   font-weight: 400;
-  color: #8491a0;
 }
 
 .projects__link {
