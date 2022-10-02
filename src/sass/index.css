@@ -1,35 +1,80 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  background-color: getColor("base");
+  color: getColor("text");
+  font-family: Sen, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   padding: 48px 20px;
   margin: 0 auto;
-
-  @media screen and (min-width: 360px) {
+}
+@media screen and (min-width: 360px) {
+  .container {
     width: 360px;
   }
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .container {
     width: 768px;
     padding: 80px 40px;
   }
-
-  @media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1440px) {
+  .container {
     width: 1440px;
     padding: 120px 72px;
   }
 }
 
 body {
-  background-color: getColor('base');
-  color: getColor('text');
+  background-color: #000000;
+  color: #ffffff;
   font-family: Sen, sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
 
-.section-photography {
-  $colors: 'base';
-}
 .section-photography__title {
-  font-family: 'Sen';
+  font-family: "Sen";
   font-weight: 700;
   font-size: 55px;
   line-height: 1.2;
@@ -38,7 +83,7 @@ body {
 }
 
 .section-photography__text {
-  font-family: 'Sen';
+  font-family: "Sen";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -77,4 +122,4 @@ body {
 .photo-set {
   display: flex;
   gap: 24px;
-}
+}/*# sourceMappingURL=index.css.map */
