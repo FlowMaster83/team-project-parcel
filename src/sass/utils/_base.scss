@@ -1,4 +1,6 @@
 body {
+  background-color: getColor("base");
+  color: getColor('text');
   background-color: #000000;
   color: #8491a0;
   font-family: Sen, sans-serif;
