@@ -1,5 +1,50 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-  font-family: 'Sen';
+  background-color: getColor("base");
+  color: getColor("text");
+  font-family: Sen, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Sen";
   font-style: normal;
   background-color: #000;
 }
@@ -15,7 +60,7 @@ body {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 32px;
-  line-height: calc(38 / 32);
+  line-height: 1.1875;
   color: #ffffff;
 }
 
@@ -23,7 +68,7 @@ body {
   margin-bottom: 48px;
   font-weight: 400;
   font-size: 18px;
-  line-height: calc(27 / 18);
+  line-height: 1.5;
   color: #8491a0;
 }
 
@@ -37,7 +82,7 @@ body {
   flex-direction: column;
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(24 / 16);
+  line-height: 1.5;
   color: #ffffff;
   margin-bottom: 40px;
 }
@@ -47,7 +92,6 @@ body {
   margin: 0;
   margin-top: 8px;
   border: none;
-
   height: 50px;
   background-color: #181823;
   color: #ffffff;
@@ -73,10 +117,9 @@ body {
   padding: 24px 32px;
   gap: 10px;
   width: 100%;
-
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(27 / 18);
+  line-height: 1.5;
   text-transform: uppercase;
   border: none;
   color: #ffffff;
@@ -90,47 +133,39 @@ body {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   .conteiner {
     width: 768px;
     padding: 80px 40px;
   }
-
   .get-started {
     display: flex;
   }
-
   .get-starter-text-wraper {
     width: 323px;
     margin-right: 24px;
   }
-
   .get-started__title {
     font-weight: 700;
     font-size: 55px;
-    line-height: calc(66 / 55);
+    line-height: 1.2;
   }
-
   .get-started-form {
     width: 332px;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .conteiner {
     width: 1440px;
     padding: 120px 182px;
   }
-
   .get-starter-text-wraper {
     width: 526px;
     padding: 0;
   }
-
   .get-started-form {
     width: 526px;
     margin-left: 0;
     padding: 0;
   }
-}
+}/*# sourceMappingURL=index.css.map */
