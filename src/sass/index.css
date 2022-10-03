@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-  background-color: getColor("base");
-  color: getColor("text");
+  background-color: #000000;
+  color: #8491a0;
   font-family: Sen, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -65,38 +65,48 @@ a {
   }
 }
 
-body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: Sen, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .section-photography__title {
-  font-family: "Sen";
   font-weight: 700;
-  font-size: 55px;
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 1.18;
   margin-bottom: 24px;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .section-photography__title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
 
 .section-photography__text {
-  font-family: "Sen";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 64px;
-  max-width: 588px;
-  color: #8491a0;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section-photography__text {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-photography__text {
+    max-width: 588px;
+  }
 }
 
 .button-set {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   align-items: center;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .button-set {
+    flex-wrap: nowrap;
+  }
 }
 
 .button-set__button {
@@ -105,13 +115,20 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
+  width: 148px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: black;
+  background-color: #000000;
   border: 1px solid #5221e6;
-  padding: 12px 16px;
+  padding: 12px 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .button-set__button {
+    width: auto;
+    padding: 12px 16px;
+  }
 }
 
 .button-set__button:hover,
@@ -121,5 +138,12 @@ body {
 
 .photo-set {
   display: flex;
+  flex-direction: column;
   gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .photo-set {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=index.css.map */

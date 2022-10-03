@@ -1,57 +1,42 @@
-.container {
-  padding: 48px 20px;
-  margin: 0 auto;
-
-  @media screen and (min-width: 360px) {
-    width: 360px;
-  }
+.section-photography__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  margin-bottom: 24px;
+  color: getColor('text');
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 80px 40px;
+    font-size: 55px;
+    line-height: 1.2;
   }
-
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
-    padding: 120px 72px;
-  }
-}
-
-body {
-  background-color: getColor('base');
-  color: getColor('text');
-  font-family: Sen, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.section-photography {
-  $colors: 'base';
-}
-.section-photography__title {
-  font-family: 'Sen';
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 1.2;
-  margin-bottom: 24px;
-  color: #ffffff;
 }
 
 .section-photography__text {
-  font-family: 'Sen';
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 64px;
-  max-width: 588px;
-  color: #8491a0;
+  margin-bottom: 40px;
+  color: getColor('light grey');
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 588px;
+  }
 }
 
 .button-set {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   align-items: center;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .button-set__button {
@@ -60,21 +45,33 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
+  width: 148px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: black;
-  border: 1px solid #5221e6;
-  padding: 12px 16px;
+  color: getColor('text');
+  background-color: getColor('base');
+  border: 1px solid getColor('primary');
+  padding: 12px 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: auto;
+    padding: 12px 16px;
+  }
 }
 
 .button-set__button:hover,
 .button-set__button:focus {
-  background-color: #5221e6;
+  background-color: getColor('primary');
 }
 
 .photo-set {
   display: flex;
+  flex-direction: column;
   gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
