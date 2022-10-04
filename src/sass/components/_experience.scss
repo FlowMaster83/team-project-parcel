@@ -1,0 +1,92 @@
+
+
+.experience__suptitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: getColor("light-grey");
+    margin-bottom: 8px;
+}
+
+.experience__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.19;
+    color: getColor("text");
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 55px;
+        line-height: 1.2;
+    }
+}
+
+.experience_number {
+    font-weight: 400;
+    font-size: 117px;
+    line-height: 1.21;
+    color: getColor("light-grey");
+}
+
+.experience__header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: getColor("text");
+    margin-bottom: 16px;
+}
+
+.experience__google {
+    color: getColor("green-accent");
+}
+
+.experience__facebook {
+    color: getColor("blue-accent");
+}
+
+.experience__dribbble {
+    color: getColor("pink-accent");
+}
+
+.experience__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: getColor("light-grey");
+}
+
+.experience__card:not(:last-child) {
+        margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .experience__card:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .experience__card{
+        width: 213px;
+    }
+
+    .experience__list{
+        display: flex;
+        gap: 24px;
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .experience__header {
+        width: 197px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .experience__card {
+        width: 416px;
+    }
+
+    .experience__header {
+        width: 100%;
+    }
+}
