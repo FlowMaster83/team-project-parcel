@@ -1,21 +1,18 @@
-@media screen and (min-width: 1440px) {
-    .container-description {
-        width: 720px;
-    }
-    .container-social {        
-        background-color: #000000;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 720px 0px;
-    }
-}
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
-@media screen and (min-width: 1440px) {
-    .container-social {        
-        background-image: linear-gradient(rgba(0, 0, 0, 5), rgba(0, 0, 0, 5)),
-            url(/src/images/desktop/instagram-d-1x.jpg);
+@media screen and (min-width: 1440px) {    
+    .container-social { 
+        background-color: rgba(0, 0, 0, 1);
+        background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)), 
+        linear-gradient(rgba(255, 243, 228, 1), rgba(255, 243, 228, 1)), 
+        url(/src/images/desktop/instagram-d-1x.jpg);
+        background-repeat: no-repeat;
+        background-position: left center, left center, right center;
+        background-size:720px, 720px, auto;
+        background-origin: border-box;
+
     }
-    .title {    
+    .title {   
+        width: 285px; 
         margin-bottom: 24px;
         font-style: normal;
         font-weight: 700;
@@ -31,6 +28,7 @@
         font-size: 18px;
         line-height: 150%;    
         color: #5B6876;
+        
     }
     .remark {
         font-style: normal;
@@ -43,8 +41,14 @@
 @media screen and (min-device-picel-ratio: 2) and (min-width: 1440px),
 screen and (min-resolution: 192dpi) and (min-width: 1440px),
 screen and (min-resolution: 2dppx) and (min-width: 1440px) {
-    .container-hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-            url(/src/images/desktop/instagram-d-2x.jpg);
-    }
+    // .container-social {
+    //     background-color: rgba(0, 0, 0, 1);
+    //         background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
+    //             linear-gradient(rgba(255, 243, 228, 1), rgba(255, 243, 228, 1)),
+    //             url(/src/images/desktop/instagram-d-1x.jpg);
+    //         background-repeat: no-repeat;
+    //         background-position: left center, left center, right center;
+    //         background-size: 720px, 720px, auto;
+    //         background-origin: border-box;
+    // }
 }
