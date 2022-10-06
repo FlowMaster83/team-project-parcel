@@ -30,7 +30,7 @@
                 url(/src/images/tablet/instagram-t-1x.jpg);
         background-repeat: no-repeat;
         background-position: left center, right center;
-        background-size: 384px, auto;
+        background-size: 384px, 384px;
         background-origin: border-box;
     }
     .title {   
@@ -48,6 +48,21 @@
         margin-top: 4px;
     } 
 }
+@media screen and (min-device-picel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+
+    .container-social {
+        padding: 80px 40px;
+        background-color: rgba(0, 0, 0, 1);
+        background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
+            url(/src/images/tablet/instagram-t-2x.jpg);
+        background-repeat: no-repeat;
+        background-position: left center, right center;
+        background-size: 384px, 384px;
+        background-origin: border-box;
+    }
+}
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
 @media screen and (min-width: 1440px) {
     .container-social {
@@ -57,9 +72,9 @@
             url(/src/images/desktop/instagram-d-1x.jpg);
         background-repeat: no-repeat;
         background-position: left center, left center, right center;
-        background-size: 720px, 720px, auto;
+        background-size: 720px, 720px, 720px;
         background-origin: border-box;
-    }
+    }    
     .title {
         width: 285px;
         margin-bottom: 24px;
@@ -73,6 +88,21 @@
     .remark::after {
         width: 125px;
         margin-top: 4px;
+    }
+}
+@media screen and (min-device-picel-ratio: 2) and (min-width: 1440px),
+screen and (min-resolution: 192dpi) and (min-width: 1440px),
+screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+
+    .container-social {
+        background-color: rgba(0, 0, 0, 1);
+        background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
+            linear-gradient(rgba(255, 243, 228, 1), rgba(255, 243, 228, 1)),
+            url(/src/images/desktop/instagram-d-2x.jpg);
+        background-repeat: no-repeat;
+        background-position: left center, left center, right center;
+        background-size: 720px, 720px, 720px;
+        background-origin: border-box;
     }
 }
 // <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
@@ -101,19 +131,4 @@
     height: 0px;    
     border: 1px solid #8491A0;
     content: "";
-}
-
-@media screen and (min-device-picel-ratio: 2) and (min-width: 1440px),
-screen and (min-resolution: 192dpi) and (min-width: 1440px),
-screen and (min-resolution: 2dppx) and (min-width: 1440px) {
-    // .container-social {
-    //     background-color: rgba(0, 0, 0, 1);
-    //         background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
-    //             linear-gradient(rgba(255, 243, 228, 1), rgba(255, 243, 228, 1)),
-    //             url(/src/images/desktop/instagram-d-1x.jpg);
-    //         background-repeat: no-repeat;
-    //         background-position: left center, left center, right center;
-    //         background-size: 720px, 720px, auto;
-    //         background-origin: border-box;
-    // }
 }
