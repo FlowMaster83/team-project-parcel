@@ -1,43 +1,108 @@
-// <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
-@media screen and (min-width: 1440px) {    
-    .container-social { 
+// <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
+@media screen and (max-width: 767px) {
+    .container-social {
+        width: 100%;
+        max-width: 360px;
         background-color: rgba(0, 0, 0, 1);
-        background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)), 
-        linear-gradient(rgba(255, 243, 228, 1), rgba(255, 243, 228, 1)), 
-        url(/src/images/desktop/instagram-d-1x.jpg);
-        background-repeat: no-repeat;
-        background-position: left center, left center, right center;
-        background-size:720px, 720px, auto;
-        background-origin: border-box;
-
+        background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1));
     }
     .title {   
-        width: 285px; 
-        margin-bottom: 24px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 55px;
-        line-height: 1.2;      
-        color: #181823;
+        width: 100%;        
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 1.19;
+    }
+    .description {
+        margin-bottom: 126px;
+        width: 100%; 
+    }
+    .remark::after {        
+        width: 128px;        
+        margin-top: 3px;
     }    
+}
+// <<<<<<<<<<--TABLET-->>>>>>>>>>>>
+@media screen and (min-width: 768px) {
+    .container-social {
+        padding: 80px 40px;
+        background-color: rgba(0, 0, 0, 1);
+        background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
+                url(/src/images/tablet/instagram-t-1x.jpg);
+        background-repeat: no-repeat;
+        background-position: left center, right center;
+        background-size: 384px, auto;
+        background-origin: border-box;
+    }
+    .title {   
+        width: 304px; 
+        margin-bottom: 24px;        
+        font-size: 55px;
+        line-height: 1.2;        
+    }
+    .description {
+        margin-bottom: 133px;
+        width: 304px; 
+    }
+    .remark::after {        
+        width: 116px;        
+        margin-top: 4px;
+    } 
+}
+// <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
+@media screen and (min-width: 1440px) {
+    .container-social {
+        background-color: rgba(0, 0, 0, 1);
+        background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
+            linear-gradient(rgba(255, 243, 228, 1), rgba(255, 243, 228, 1)),
+            url(/src/images/desktop/instagram-d-1x.jpg);
+        background-repeat: no-repeat;
+        background-position: left center, left center, right center;
+        background-size: 720px, 720px, auto;
+        background-origin: border-box;
+    }
+    .title {
+        width: 285px;
+        margin-bottom: 24px;
+        font-size: 55px;
+        line-height: 1.2;
+    }
     .description {
         margin-bottom: 134px;
         width: 576px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 150%;    
-        color: #5B6876;
-        
     }
-    .remark {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #181823;
+    .remark::after {
+        width: 125px;
+        margin-top: 4px;
     }
 }
+// <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+.title {    
+    font-style: normal;
+    font-weight: 700;    
+    color: #181823;
+}
+.description {
+    margin-bottom: 126px;      
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #5B6876;
+}
+.remark {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #181823;
+}
+.remark::after {
+    display: block;    
+    height: 0px;    
+    border: 1px solid #8491A0;
+    content: "";
+}
+
 @media screen and (min-device-picel-ratio: 2) and (min-width: 1440px),
 screen and (min-resolution: 192dpi) and (min-width: 1440px),
 screen and (min-resolution: 2dppx) and (min-width: 1440px) {
