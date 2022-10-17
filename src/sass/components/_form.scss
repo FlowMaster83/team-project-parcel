@@ -1,0 +1,136 @@
+body {
+  font-family: 'Sen';
+  font-style: normal;
+  background-color: #000;
+}
+
+.conteiner {
+  width: 100%;
+  padding: 48px 20px;
+}
+
+.get-started__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  color: #ffffff;
+}
+
+.get-started__text {
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(27 / 18);
+  color: #8491a0;
+}
+
+.get-started-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-started-form__label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.get-stated-form__input {
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+  border: none;
+
+  height: 50px;
+  background-color: #181823;
+  color: #ffffff;
+}
+
+.get-started-form__textarea {
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+  border: none;
+  resize: none;
+  height: 100px;
+  background-color: #181823;
+  color: #ffffff;
+}
+
+.get-started-form__button {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 32px;
+  gap: 10px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(27 / 18);
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background: #5221e6;
+}
+
+@media screen and (min-width: 360px) {
+  .conteiner {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+    padding: 80px 40px;
+  }
+
+  .get-started {
+    display: flex;
+  }
+
+  .get-starter-text-wraper {
+    width: 323px;
+    margin-right: 24px;
+  }
+
+  .get-started__title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: calc(66 / 55);
+  }
+
+  .get-started-form {
+    width: 332px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .conteiner {
+    width: 1440px;
+    padding: 120px 182px;
+  }
+
+  .get-starter-text-wraper {
+    width: 526px;
+    padding: 0;
+  }
+
+  .get-started-form {
+    width: 526px;
+    margin-left: 0;
+    padding: 0;
+  }
+}
