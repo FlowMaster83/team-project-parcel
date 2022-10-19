@@ -6,6 +6,7 @@
         background-color: rgba(0, 0, 0, 1);
         background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1));
     }
+    
     .title {   
         width: 100%;        
         margin-bottom: 16px;
@@ -24,7 +25,7 @@
 // <<<<<<<<<<--TABLET-->>>>>>>>>>>>
 @media screen and (min-width: 768px) {
     .container-social {
-        padding: 80px 40px;
+        
         background-color: rgba(0, 0, 0, 1);
         background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
                 url(/src/images/tablet/instagram-t-1x.jpg);
@@ -32,6 +33,10 @@
         background-position: left center, right center;
         background-size: 384px, 384px;
         background-origin: border-box;
+    }
+    .container-description {
+        padding: 80px 40px;
+        
     }
     .title {   
         width: 304px; 
@@ -66,6 +71,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
 @media screen and (min-width: 1440px) {
     .container-social {
+        
         background-color: rgba(0, 0, 0, 1);
         background-image: linear-gradient(rgba(251, 228, 255, 1), rgba(251, 228, 255, 1)),
             linear-gradient(rgba(255, 243, 228, 1), rgba(255, 243, 228, 1)),
@@ -74,7 +80,10 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         background-position: left center, left center, right center;
         background-size: 720px, 720px, 720px;
         background-origin: border-box;
-    }    
+    }
+    .container-description {
+        padding: 120px 72px;        
+    }
     .title {
         width: 285px;
         margin-bottom: 24px;
